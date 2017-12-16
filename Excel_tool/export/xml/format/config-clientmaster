@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClientMasterColumns xmlns:xsi="http://www.w3.org/2001/XMLSchema-instants
+	xsi:noNamespaceSchemaLocation="config-clientmaster-
+	<columns>
+	<column>
+		<number>1</number>
+		<name>Field Name(Jap)</name>
+		<id>Field Name(Eng)</id>
+		<type>Type(java)</type>
+		<required>N</required>
+		<remark></remark>
+	</column>
+#set{1=1+1}
+	<column>
+		<number>1</number>
+		<name></name>
+		<id>Id</id>
+		<type>Long</type>
+		<required>N</required>
+		<remark></remark>
+	</column>
+#set{1=1+1}
+	<column>
+		<number>1</number>
+		<name>Bango</name>
+		<id>ClientId</id>
+		<type>String</type>
+		<required>N</required>
+		<remark></remark>
+	</column>
+#set{1=1+1}
+	</columns>
+</ClientMasterColumns>

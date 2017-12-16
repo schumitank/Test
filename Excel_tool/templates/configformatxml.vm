@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<${tblDef.getTableEngName()}Columns xmlns:xsi="http://www.w3.org/2001/XMLSchema-instants
+	xsi:noNamespaceSchemaLocation="config-${tblDef.getTableEngName().toLowerCase()}-
+	<columns>
+#set ($i=1)
+#foreach( $field in ${tblDef.getFieldList()} )
+	<column>
+		<number>$i</number>
+		<name>${field.getFieldJPName()}</name>
+		<id>${field.getFieldEngName()}</id>
+		<type>${field.getSimpleJavaType()}</type>
+		<required>N</required>
+		<remark></remark>
+	</column>
+#set{$i=$i+1}
+#end
+	</columns>
+</${tblDef.getTableEngName()}Columns>
